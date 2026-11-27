@@ -58,6 +58,8 @@ Bug reports and tier-appropriate improvements welcome. Please keep contributions
 
 See [docs/HARDWARE.md](docs/HARDWARE.md) for a tier-by-tier compatible-hardware map (ESP32-class controllers, capacitive soil sensors, humidity sensors, cameras) mapped to the exact contract fields.
 
+Almanac sources (Farmers' Almanac and The Old Farmer's Almanac) are handled as citations + user-entered frost dates — no scraping: [docs/ALMANAC.md](docs/ALMANAC.md).
+
 Weather: [docs/WEATHER-SOURCES.md](docs/WEATHER-SOURCES.md) explains why Open-Meteo (keyless) is the default over Weather Underground / Weather Channel (account + key). `garden_os.weather.fetch_weather()` maps live data into `WeatherInput`.
 
 The companion web app (live weather tool, watering planner, sourced research and hardware guide) is at [open-garden-app](https://github.com/PCMedicalist/open-garden-app).
