@@ -60,6 +60,8 @@ See [docs/HARDWARE.md](docs/HARDWARE.md) for a tier-by-tier compatible-hardware 
 
 Weather: [docs/WEATHER-SOURCES.md](docs/WEATHER-SOURCES.md) explains why Open-Meteo (keyless) is the default over Weather Underground / Weather Channel (account + key). `garden_os.weather.fetch_weather()` maps live data into `WeatherInput`.
 
+The companion web app (live weather tool, watering planner, sourced research and hardware guide) is at [open-garden-app](https://github.com/PCMedicalist/open-garden-app).
+
 ## Licence
 
 Apache-2.0 — see [LICENSE](LICENSE). Attribution to PCMedicalist appreciated; the licence terms govern.
