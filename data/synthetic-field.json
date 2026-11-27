@@ -1,0 +1,82 @@
+{
+  "field_id": "demo-field-01",
+  "synthetic": true,
+  "observed_at": "2026-11-27T12:00:00+00:00",
+  "location": {
+    "latitude": 30.2672,
+    "longitude": -97.7431,
+    "elevation_m": 149,
+    "timezone": "America/Chicago"
+  },
+  "weather": {
+    "observed_at": "2026-11-27T11:30:00+00:00",
+    "source": "synthetic-weather-station",
+    "temperature_c": 24.5,
+    "humidity_pct": 58,
+    "rainfall_forecast_mm": 0.4,
+    "evapotranspiration_mm": 3.2
+  },
+  "air_humidity": [
+    {
+      "sensor_id": "air-01",
+      "observed_at": "2026-11-27T11:55:00+00:00",
+      "relative_pct": 61,
+      "temperature_c": 24.1
+    }
+  ],
+  "ground_moisture": [
+    {
+      "sensor_id": "soil-10cm",
+      "observed_at": "2026-11-27T11:58:00+00:00",
+      "depth_cm": 10,
+      "volumetric_pct": 28
+    },
+    {
+      "sensor_id": "soil-30cm",
+      "observed_at": "2026-11-27T11:58:00+00:00",
+      "depth_cm": 30,
+      "volumetric_pct": 33
+    }
+  ],
+  "growth": [
+    {
+      "monitor_id": "growth-cam-A",
+      "stage": "vegetative",
+      "canopy_cover_pct": 62,
+      "virtualization_ref": "twin-demo-field-01",
+      "observed_at": "2026-11-27T11:50:00+00:00"
+    }
+  ],
+  "virtualization": {
+    "scene_id": "twin-demo-field-01",
+    "renderer": "planned: three.js or local MuJoCo scene",
+    "model_ref": "synthetic://twin/demo-field-01/v1",
+    "coordinate_frame": "ENU (east-north-up), origin at field centroid",
+    "camera_poses": [
+      {"camera_id": "cam-A", "position": [0, 0, 2.1], "look_at": [0, 4, 0.5]},
+      {"camera_id": "cam-B", "position": [3, 1, 2.0], "look_at": [0, 3, 0.5]}
+    ],
+    "synced_at": "2026-11-27T11:45:00+00:00"
+  },
+  "camera_overlays": [
+    {
+      "camera_id": "cam-A",
+      "image_ref": "synthetic://frames/demo-field-01/2026-11-27T11-50.jpg",
+      "overlay_mode": "growth-stage",
+      "calibration_ref": "synthetic://calibration/cam-A/v1",
+      "annotations": [
+        {"label": "canopy", "bbox": [120, 80, 240, 180], "confidence": 0.82},
+        {"label": "bare-soil", "bbox": [400, 300, 90, 70], "confidence": 0.71}
+      ]
+    },
+    {
+      "camera_id": "cam-B",
+      "image_ref": "synthetic://frames/demo-field-01/2026-11-27T11-52.jpg",
+      "overlay_mode": "moisture-heatmap",
+      "calibration_ref": "synthetic://calibration/cam-B/v1",
+      "annotations": [
+        {"label": "dry-zone", "bbox": [60, 140, 130, 120], "confidence": 0.68}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+# .gitignore — Open Garden OS
+
+# Secrets & personal data (NEVER commit)
+.env
+.env.*
+!.env.example
+*.token
+*.token.*
+credentials*.json
+auth.json
+*_key.json
+*.pem
+*.key
+
+# Real garden data — synthetic fixtures only in git
+data/real/
+data/personal/
+*.sqlite
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Model weights / binaries
+*.gguf
+*.safetensors
+*.bin
+*.onnx
+*.pt
+*.mp4
+*.png
+!docs/**/*.png
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
