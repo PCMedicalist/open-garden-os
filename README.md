@@ -62,7 +62,7 @@ Almanac sources (Farmers' Almanac and The Old Farmer's Almanac) are handled as c
 
 Weather: [docs/WEATHER-SOURCES.md](docs/WEATHER-SOURCES.md) explains why Open-Meteo (keyless) is the default over Weather Underground / Weather Channel (account + key). `garden_os.weather.fetch_weather()` maps live data into `WeatherInput`.
 
-The companion web app (live weather tool, watering planner, sourced research and hardware guide) is at [open-garden-app](https://github.com/PCMedicalist/open-garden-app).
+The companion web app, **Green Thumb** (live weather tool, watering planner, sourced research and hardware guide), is at [open-garden-app](https://github.com/PCMedicalist/open-garden-app).
 
 ## Licence
 
