@@ -11,6 +11,9 @@ All notable changes to this project are documented here.
 - Synthetic field fixture (explicitly labelled synthetic) and 15 stdlib tests.
 - Tier roadmap (Seed / Sprout / Canopy), privacy rules, architecture, sourced research notes, Apache-2.0 licence.
 
+### Added in 0.1.1
+- Open-Meteo weather adapter (`garden_os.weather`), 4 offline tests, source comparison doc.
+
 ### Notes
 - No hardware control, no agronomic advice, no cloud calls.
 

@@ -58,6 +58,8 @@ Bug reports and tier-appropriate improvements welcome. Please keep contributions
 
 See [docs/HARDWARE.md](docs/HARDWARE.md) for a tier-by-tier compatible-hardware map (ESP32-class controllers, capacitive soil sensors, humidity sensors, cameras) mapped to the exact contract fields.
 
+Weather: [docs/WEATHER-SOURCES.md](docs/WEATHER-SOURCES.md) explains why Open-Meteo (keyless) is the default over Weather Underground / Weather Channel (account + key). `garden_os.weather.fetch_weather()` maps live data into `WeatherInput`.
+
 ## Licence
 
 Apache-2.0 — see [LICENSE](LICENSE). Attribution to PCMedicalist appreciated; the licence terms govern.
